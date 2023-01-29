@@ -56,6 +56,6 @@ Media_Play_Pause::do_media_key("Media_Play_Pause")
 ^Volume_Mute::do_microphone_mute(1)
 ^Volume_Down::
 ^Volume_Up::do_microphone_mute(0)
-#LButton::AWD_StartAction(0, "LButton", 8) ; Move
-#RButton::AWD_StartAction(1, "RButton", 8) ; Resize
+#LButton::AWD_StartAction(0, "LButton") ; Move
+#RButton::AWD_StartAction(1, "RButton") ; Resize
 RAlt::do_compose_key()

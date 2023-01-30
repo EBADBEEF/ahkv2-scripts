@@ -27,7 +27,7 @@ EnumResolutions() {
   i := 0
   while (1) {
     DEVMODE := Buffer(sizeof_DEVMODE)
-    NumPut "UShort" sizeof_DEVMODE, DEVMODE, off_dmSize
+    NumPut "UShort", sizeof_DEVMODE, DEVMODE, off_dmSize
     ret:=DllCall("EnumDisplaySettingsA", "UInt", 0, "UInt", i, "UInt", DEVMODE.ptr)
     if (ret <= 0)
       break
